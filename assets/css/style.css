@@ -1,0 +1,76 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'nav' 'main'
+    'footer' 'footer';
+    grid-template-columns: 10rem 1fr;
+    grid-template-rows: 3rem 1fr 3rem;
+
+}
+
+nav{
+    grid-area: nav;
+    line-height: 4rem;
+    background-color: white;
+    padding: 0 1.5rem;
+}
+
+header{
+    grid-area: header;
+    line-height: 4rem;
+    background-color: blue;
+    color: white;
+    text-align: center;
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    line-height: 1.5rem;
+
+}
+
+main{
+    grid-area: main;
+    background-color: antiquewhite;
+
+}
+
+h2{
+    font-size: 1.2rem;
+
+}
+
+.card{
+    display: flex;
+    background-color: white;
+    min-height: 20rem;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.card img{
+    max-width: 100%;
+    margin: 0.5;
+    border: solid 1px grey;
+}
+
+.card .btn{
+    background-color: lightskyblue;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
